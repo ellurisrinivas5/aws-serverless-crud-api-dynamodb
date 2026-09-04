@@ -7,10 +7,10 @@ The microservice leverages a completely serverless infrastructure pattern:
 
 <img width="905" height="420" alt="GIT_Serverless_CRUD_API (1)" src="https://github.com/user-attachments/assets/03561d34-4656-4df5-845a-3d15f28d1fc2" />
 
-AWS IAM Role/Policies: Lambda to connect DynamoDB AWS service and perform CRUD operations.
-Amazon API Gateway: Directs HTTP payload endpoints securely via a custom resource /dynamodbmanager.
-AWS Lambda Execution Engine: Runs an optimized Python 3.13 handler processing multiple operations.
-Amazon DynamoDB: Stores non-relational table objects securely via partition key indexes.
+1. AWS IAM Role/Policies: Lambda to connect DynamoDB AWS service and perform CRUD operations.
+2. Amazon API Gateway: Directs HTTP payload endpoints securely via a custom resource /dynamodbmanager.
+3. AWS Lambda Execution Engine: Runs an optimized Python 3.13 handler processing multiple operations.
+4. Amazon DynamoDB: Stores non-relational table objects securely via partition key indexes.
 
 Step-by-Step Deployment Guide
 Step 1: Enforce Least-Privilege IAM Policies
