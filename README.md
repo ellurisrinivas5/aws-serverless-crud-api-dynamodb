@@ -6,9 +6,6 @@ High-Level Architecture
 
 The microservice leverages a completely serverless infrastructure pattern:
 
-
-<img width="905" height="420" alt="GIT_Serverless_CRUD_API (1)" src="https://github.com/user-attachments/assets/03561d34-4656-4df5-845a-3d15f28d1fc2" />
-
 <img width="905" height="420" alt="GIT_Serverless_CRUD_API (2)" src="https://github.com/user-attachments/assets/5814378f-a973-48a8-8d0b-7ccfe8465a07" />
 
 
