@@ -3,6 +3,7 @@ Serverless CRUD API & Performance Benchmarking POC
 A production-ready guide to deploying, testing, and optimize a decoupled serverless REST API backend on AWS. This project implements secure multi-action request routing    using a single Python runtime handler and optimize the resource profile using data-driven load testing.
 
 High-Level Architecture
+
 The microservice leverages a completely serverless infrastructure pattern:
 
 
@@ -14,6 +15,7 @@ The microservice leverages a completely serverless infrastructure pattern:
 4. Amazon DynamoDB: Stores non-relational table objects securely via partition key indexes.
 
 Step-by-Step Deployment Guide
+
 Step 1: Enforce Least-Privilege IAM Policies
 1. Open the Policies page in the IAM Console and click Create Policy.
 2. Select the JSON editor and paste the configuration located in iam-policy.json. This scopes Lambda capabilities down exclusively to required DynamoDB table mechanics and CloudWatch logging permissions.
