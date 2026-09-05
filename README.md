@@ -2,17 +2,25 @@
 
 A production-ready guide to deploying, testing, and optimize a decoupled serverless REST API backend on AWS. This project implements secure multi-action request routing    using a single Python runtime handler and optimize the resource profile using data-driven load testing.
 
-High-Level Architecture
-
-The microservice leverages a completely serverless infrastructure pattern:
+## Architecture
 
 <img width="905" height="420" alt="GIT_Serverless_CRUD_API (2)" src="https://github.com/user-attachments/assets/5814378f-a973-48a8-8d0b-7ccfe8465a07" />
-
 
 1. AWS IAM Role/Policies: Lambda to connect DynamoDB AWS service and perform CRUD operations.
 2. Amazon API Gateway: Directs HTTP payload endpoints securely via a custom resource /dynamodbmanager.
 3. AWS Lambda Execution Engine: Runs an optimized Python 3.13 handler processing multiple operations.
 4. Amazon DynamoDB: Stores non-relational table objects securely via partition key indexes.
+
+## Scope of API
+The API accepts a POST request with a JSON payload specifying an operation, a tableName, and a payload.
+Supported operations:
+
+create – add a new item to the table
+read – fetch a single item by key
+update – modify an existing item
+delete – remove an item
+list – scan and return all items in the table
+echo / ping – simple test operations, not tied to DynamoDB
 
 Step-by-Step Deployment Guide
 
