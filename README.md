@@ -22,7 +22,7 @@ delete – remove an item
 list – scan and return all items in the table
 echo / ping – simple test operations, not tied to DynamoDB
 
-Step-by-Step Deployment Guide
+## Step-by-Step Deployment Guide
 
 Step 1: Enforce Least-Privilege IAM Policies
 1. Open the Policies page in the IAM Console and click Create Policy.
